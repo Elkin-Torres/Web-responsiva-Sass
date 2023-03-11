@@ -1,0 +1,50 @@
+/*Colores*/
+$color-font1:#141010;
+$color-font2:#757a79;
+$colorImg:#6495ED;
+$colorBackground:rgb(52, 53, 51);
+
+/*Fuentes*/
+$font-h1:3rem;
+$font-h2:2.4rem;
+$font-h3:2rem;
+$font-p:1.8rem;
+$font-a:1.6rem;
+/**/
+
+nav,
+.informacion,
+.oferta{
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+h1{
+  font-size: $font-h1;
+  color: $color-font1;
+}
+
+h2{
+  font-size: $font-h2;
+  color: $color-font1;
+}
+
+h3{
+  font-size: $font-h3;
+  color: $color-font1;
+}
+
+p{
+  font-size: $font-p;
+  color: $color-font2;
+}
+
+li a{
+  text-decoration: none;
+  display: inline-block;
+  color: $color-font2;
+  font-size: $font-a;
+  font-weight: bold;
+}
+

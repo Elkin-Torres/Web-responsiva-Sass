@@ -1,0 +1,53 @@
+@use "mixins";
+
+//Pantallas superiores a 1400 px
+
+@media (min-width: 1400px){
+  .nav,
+  .informacion,
+  .oferta,
+  .footer-text{
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+//Pantallas máximo de 992 px
+
+@media (max-width:992px){
+  .nav{
+     @include mixins.flex-box(row, nowrap, center, center);
+     padding-top: 20px;
+     padding-bottom: 20px;
+  }
+
+  .informacion{
+    @include mixins.flex-box(row,wrap,center,center);
+
+    &__contenido{
+      padding: 0;
+      min-width: 369px;
+      text-align: center;
+    }
+
+    &__logo{
+      max-width: 100%;
+      min-width: 369px;
+      padding-top: 60px;
+    }
+  }
+
+  .oferta__enunciado{
+    min-width: 369px;
+  }
+
+  .oferta__contenido{
+    @include mixins.flex-box(row,wrap,center,center);
+    min-width: 369px;
+  }
+
+  .footer-text{
+    min-width: 369px;
+  }
+
+}

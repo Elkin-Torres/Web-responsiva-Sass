@@ -1,0 +1,264 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #fbfbfb;
+}
+
+/*Colores*/
+/*Fuentes*/
+/**/
+nav,
+.informacion,
+.oferta {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #141010;
+}
+
+h2 {
+  font-size: 2.4rem;
+  color: #141010;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #141010;
+}
+
+p {
+  font-size: 1.8rem;
+  color: #757a79;
+}
+
+li a {
+  text-decoration: none;
+  display: inline-block;
+  color: #757a79;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/*Colores*/
+/*Fuentes*/
+/**/
+nav,
+.informacion,
+.oferta {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #141010;
+}
+
+h2 {
+  font-size: 2.4rem;
+  color: #141010;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #141010;
+}
+
+p {
+  font-size: 1.8rem;
+  color: #757a79;
+}
+
+li a {
+  text-decoration: none;
+  display: inline-block;
+  color: #757a79;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-top: 3rem solid rgb(52, 53, 51);
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  width: 80px;
+  height: auto;
+}
+.nav ul {
+  display: flex;
+  gap: 1rem;
+}
+.nav li {
+  list-style: none;
+}
+.nav li a:hover {
+  color: #6495ED;
+  transform: scale(1.1);
+}
+
+.informacion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20rem;
+}
+.informacion__contenido {
+  padding-right: 5rem;
+  max-width: 50%;
+}
+.informacion__logo {
+  max-width: 50%;
+  height: auto;
+}
+.informacion__logo img {
+  width: 100%;
+  height: auto;
+}
+.informacion__btn1 {
+  border: none;
+  border-radius: 4px;
+  padding: 0.7em 1.5em;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: transform 100ms;
+  background-color: #6495ED;
+}
+.informacion__btn2 {
+  border: none;
+  border-radius: 4px;
+  padding: 0.7em 1.5em;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: transform 100ms;
+  background-color: #757a79;
+}
+
+.oferta {
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+}
+.oferta__enunciado {
+  text-align: center;
+  margin-bottom: 10%;
+}
+.oferta__contenido {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.oferta__contenido i {
+  font-size: 3rem;
+  color: #6495ED;
+}
+.oferta__contenido h3 {
+  font-weight: 500;
+}
+
+footer {
+  min-height: 80px;
+  background-color: rgb(52, 53, 51);
+}
+footer .footer-text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  padding: 25px 0;
+  text-align: center;
+}
+
+@media (min-width: 1400px) {
+  .nav,
+  .informacion,
+  .oferta,
+  .footer-text {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 992px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .informacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .informacion__contenido {
+    padding: 0;
+    min-width: 369px;
+    text-align: center;
+  }
+  .informacion__logo {
+    max-width: 100%;
+    min-width: 369px;
+    padding-top: 60px;
+  }
+  .oferta__enunciado {
+    min-width: 369px;
+  }
+  .oferta__contenido {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 369px;
+  }
+  .footer-text {
+    min-width: 369px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
